@@ -196,7 +196,7 @@ function lineWrap(text, max) {
 
 function openInBrowser(query) {
   const format = (s) => s.trim().replace(/ /g, '+'); // replace spaces with +'s
-  let url = `https://${_lang}.wikipedia.org/w/index.php?title=Special:Search&search=`;
+  let url = `https://${_lang}.m.wikipedia.org/w/index.php?title=Special:Search&search=`;
   url += format(query);
 
   if (_browser)
@@ -294,5 +294,5 @@ function formatSectionTitle(title) {
 }
 
 function printLink(lang, title) {
-  console.log(`\n https://${lang}.wikipedia.org/wiki/${encodeURIComponent(title)}`);
+  console.log(`\n https://${lang}.m.wikipedia.org/wiki/${encodeURIComponent(title)}`);
 }
